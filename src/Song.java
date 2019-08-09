@@ -55,4 +55,12 @@ public class Song {
     public void setArtists(String[] artists) {
         this.artists = artists;
     }
+
+    public String displayArtistAsText(){
+        String names = "";
+        for (String artist: this.getArtists()) {
+            names += artist +", ";
+        }
+        return names;
+    }
 }

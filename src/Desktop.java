@@ -1,7 +1,13 @@
-public class Desktop extends MusicApp  {
+import java.util.Arrays;
 
-    public Desktop(double version) {
+public class Desktop extends MusicApp implements MusicPlayer  {
+
+    public Desktop(String version) {
         super(version);
     }
 
+    @Override
+    public String play(Song song) {
+        return "Playing: " + song.getName() + " by " + song.displayArtistAsText();
+    }
 }
