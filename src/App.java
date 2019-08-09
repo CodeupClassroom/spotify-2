@@ -16,5 +16,7 @@ public class App {
             System.out.println("fersApp.play(song) = " + fersApp.play(song));
         }
 
+        fersApp.printLog();
+
     }
 }
